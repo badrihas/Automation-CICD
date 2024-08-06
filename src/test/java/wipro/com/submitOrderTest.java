@@ -32,6 +32,7 @@ public class submitOrderTest extends BaseTest {
 	@Test(dataProvider="getData", groups= {"Purchase"})
 	public void submitOrderTest(HashMap<String,String> input) throws IOException {
 		// TODO Auto-generated method stub
+                //NEW COMMENTS ARE ADEED
 		
 		ProductCatalogue productCAtalogue =landingPage.loginApplication(input.get("email"),input.get("password"));
 		List<WebElement> products= productCAtalogue.getProductList();
